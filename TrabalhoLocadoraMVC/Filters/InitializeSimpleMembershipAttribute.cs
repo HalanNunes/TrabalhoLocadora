@@ -25,11 +25,11 @@ namespace TrabalhoLocadoraMVC.Filters
         {
             public SimpleMembershipInitializer()
             {
-                Database.SetInitializer<UsersContext>(null);
+                Database.SetInitializer<Repository>(null);
 
                 try
                 {
-                    using (var context = new UsersContext())
+                    using (var context = new Repository())
                     {
                         if (!context.Database.Exists())
                         {

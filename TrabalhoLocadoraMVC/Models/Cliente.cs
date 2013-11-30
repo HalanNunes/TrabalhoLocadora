@@ -45,5 +45,7 @@ namespace TrabalhoLocadoraMVC.Models
         [Required]
         [DataType(DataType.Currency)]
         public decimal Saldo { get; set; }
+
+        public virtual ICollection<Locacao> Locacoes { get; set; }
     }
 }
